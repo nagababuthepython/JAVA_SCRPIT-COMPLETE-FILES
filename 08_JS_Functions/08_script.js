@@ -174,3 +174,35 @@ console.log(calculator(10,20,mul));
 console.log(calculator(10,20,(a , b) => {
     return a - b;
 }));
+
+// Prepare Chicken curry
+let glassBowl = (rawchicken,masala) => {
+    let marinatedChicken = `Mixing (${rawchicken} + ${masala})`;
+    return marinatedChicken;
+};
+
+let cookingBowl = (marinatedChicken,water) => {
+    let cookedChicken = `Cooking (${marinatedChicken} + ${water})`;
+    return cookedChicken;
+};
+
+let eatingPlate = (cookedChicken,rice) => {
+    let msg = `Eating : (${cookedChicken} with ${rice})`;
+    console.log(msg);
+};
+
+let rawChicken = '5kg Chicken';
+let masala = 'Pepper + salt + chilli Powder';
+let marinatedChicken = glassBowl(rawChicken,masala);
+let water = '2 ltr water';
+let cookedChicken = cookingBowl(marinatedChicken,water);
+let rice = '2kg rice';
+eatingPlate(cookedChicken,rice);
+
+
+
+
+
+
+
+
